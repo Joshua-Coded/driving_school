@@ -1,0 +1,5 @@
+*.docx
+node_modules
+dist
+scripts
+.DS_Store
