@@ -231,7 +231,7 @@ function Results({ result, qs, answers, onRetry }: { result: ExamRecord; qs: Que
       <div className={`result-hero stack lg ${result.passed ? 'pass' : 'fail'}`} style={{ alignItems: 'center' }}>
         {result.passed && <Confetti />}
         <span className={`pill ${result.passed ? 'ok' : 'bad'}`} style={{ fontSize: 14, padding: '6px 14px' }}>
-          {result.passed ? '🎉 PASSED' : 'NOT PASSED YET'}
+          {result.passed ? 'PASSED' : 'NOT PASSED YET'}
         </span>
         <div className="result-big">
           {result.score}
@@ -271,7 +271,7 @@ function Results({ result, qs, answers, onRetry }: { result: ExamRecord; qs: Que
           </button>
         ))}
       </div>
-      {list.length === 0 && <div className="card empty">No mistakes. Perfect score! 🎉</div>}
+      {list.length === 0 && <div className="card empty">No mistakes. Perfect score.</div>}
       {list.map(({ q, idx, ok }) =>
         open === idx ? (
           <QuestionView key={idx} q={byId.get(q.id)!} picked={answers[idx] ?? null} reveal index={idx} total={qs.length} />

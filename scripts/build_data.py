@@ -49,6 +49,9 @@ def norm(s: str) -> str:
     }
     for a, b in fixes.items():
         s = s.replace(a, b)
+    s = re.sub(r"(\d)(tonnes?|meters?|km\b)", r"\1 \2", s)  # "1tonnes" -> "1 tonnes"
+    s = re.sub(r"\b1 tonnes\b", "1 tonne", s)
+    s = re.sub(r",(?=[A-Za-z])", ", ", s)  # "color,white" -> "color, white"
     return s
 
 

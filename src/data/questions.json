@@ -267,13 +267,13 @@
    "q": "Out of agglomeration, the maximum speed of a moped is:",
    "options": [
     {
-     "text": "50km/h"
+     "text": "50 km/h"
     },
     {
-     "text": "40km/h"
+     "text": "40 km/h"
     },
     {
-     "text": "30km/h"
+     "text": "30 km/h"
     },
     {
      "text": "None"
@@ -333,13 +333,13 @@
    "q": "For the lack of more restrictive regulations, maximum speed of motorcycles is:",
    "options": [
     {
-     "text": "25km/h"
+     "text": "25 km/h"
     },
     {
-     "text": "70km/h"
+     "text": "70 km/h"
     },
     {
-     "text": "40km/h"
+     "text": "40 km/h"
     },
     {
      "text": "No correct answer"
@@ -528,7 +528,7 @@
   },
   {
    "id": 23,
-   "q": "When the speed of unloaded vehicles on a flat surface cannot exceed 50km per hour, the sounding alarm apparatus can be heard at distance of:",
+   "q": "When the speed of unloaded vehicles on a flat surface cannot exceed 50 km per hour, the sounding alarm apparatus can be heard at distance of:",
    "options": [
     {
      "text": "50 m"
@@ -555,7 +555,7 @@
    "q": "The circulation of self-propelling vehicles and trailers pulled by these vehicles is forbidden when their wheels are provided with either rigid bandages or elastic bandages of less than 0.04 meter thick. But this provision does not apply on:",
    "options": [
     {
-     "text": "Military vehicles when they are in traffic within a maximum radius of 25km"
+     "text": "Military vehicles when they are in traffic within a maximum radius of 25 km"
     },
     {
      "text": "Agricultural vehicles"
@@ -842,7 +842,7 @@
   },
   {
    "id": 37,
-   "q": "A fastening can only be used in cases of circumstances outside one’s control and exclusively for pulling a vehicle all the way to the place of repair at a speed which in any case cannot exceed 20km per hour. These fastenings must be shown by the following manner:",
+   "q": "A fastening can only be used in cases of circumstances outside one’s control and exclusively for pulling a vehicle all the way to the place of repair at a speed which in any case cannot exceed 20 km per hour. These fastenings must be shown by the following manner:",
    "options": [
     {
      "text": "A red piece of cloth measuring a minimum 0.50m by side"
@@ -1241,16 +1241,16 @@
    "q": "The following vehicles must be fitted with a speed indicator to be found at clear sight of a driver and to be constantly in good working condition:",
    "options": [
     {
-     "text": "motor vehicle likely to move above 60km per hour"
+     "text": "motor vehicle likely to move above 60 km per hour"
     },
     {
-     "text": "motor vehicle likely to move above 40km per hour"
+     "text": "motor vehicle likely to move above 40 km per hour"
     },
     {
-     "text": "motor vehicle likely to move above 30km per hour"
+     "text": "motor vehicle likely to move above 30 km per hour"
     },
     {
-     "text": "motor vehicle likely to move above 25km per hour"
+     "text": "motor vehicle likely to move above 25 km per hour"
     }
    ],
    "answer": 1,
@@ -1307,7 +1307,7 @@
    "q": "Between twilight and daybreak or because of circumstances, when it is not possible to see distinctly up to a distance of 200m the presence on the public way of the agricultural machines and specials implements used by construction enterprises can be signaled by two red lights at the back. But on condition that:",
    "options": [
     {
-     "text": "the vehicles or materials do not move at a speed of 20km/h"
+     "text": "the vehicles or materials do not move at a speed of 20 km/h"
     },
     {
      "text": "the length of the vehicle or material, load included, does not exceed 6m"
@@ -1573,13 +1573,13 @@
    "q": "When passing near an obstacle which pedestrians must avoid by moving to the roadway, drivers must leave beside that obstacle, a free space of at least one meter wide, where this condition cannot be met and a pedestrians walk near the obstacle, the driver can only pass beside the pedestrian at the following maximum speed:",
    "options": [
     {
-     "text": "10km/h"
+     "text": "10 km/h"
     },
     {
-     "text": "20km/h"
+     "text": "20 km/h"
     },
     {
-     "text": "30km/h"
+     "text": "30 km/h"
     },
     {
      "text": "none of the answers is correct"
@@ -1748,7 +1748,7 @@
   },
   {
    "id": 77,
-   "q": "Except the mopeds and the unloaded vehicles with the speed on a flat surface cannot exceed 50km per hour, others motor vehicles must be equipped with a sounding alarm apparatus which can be heard on the following distance:",
+   "q": "Except the mopeds and the unloaded vehicles with the speed on a flat surface cannot exceed 50 km per hour, others motor vehicles must be equipped with a sounding alarm apparatus which can be heard on the following distance:",
    "options": [
     {
      "text": "200m"
@@ -1841,10 +1841,10 @@
    "q": "Motor vehicles and mopeds wheels as well as those of their trailers must be provided with type bandages the marks of which cannot have a depth lower than one millimeter in all their rollings surface and where their cover cannot be apparent at any place or present on their sides any deep tears.",
    "options": [
     {
-     "text": "the vehicles the speed of which, if unloaded cannot exceed 25km per hour"
+     "text": "the vehicles the speed of which, if unloaded cannot exceed 25 km per hour"
     },
     {
-     "text": "the vehicles for RNP when they are in traffic within a maximum radius of 25km"
+     "text": "the vehicles for RNP when they are in traffic within a maximum radius of 25 km"
     },
     {
      "text": "A and B are both correct"
@@ -2704,7 +2704,7 @@
   },
   {
    "id": 119,
-   "q": "When the loading is constituted with cereals, raw coffee, wooden charcoal, non-ginned cotton, straw, grass, width can reach 2.75m but when the loading is constituted as above and for warded within a radius of 25km from the place of loading, except in built up areas, its width can reach the following measures:",
+   "q": "When the loading is constituted with cereals, raw coffee, wooden charcoal, non-ginned cotton, straw, grass, width can reach 2.75m but when the loading is constituted as above and for warded within a radius of 25 km from the place of loading, except in built up areas, its width can reach the following measures:",
    "options": [
     {
      "text": "4m"
@@ -2990,7 +2990,7 @@
   },
   {
    "id": 133,
-   "q": "Except an authorization issued by the minister having transports in his duties, it is prohibited to put in circulation the line of more than three vehicles, but these are not applicable to the lines of farm vehicles moving within a radius of 25km from the farm, line of vehicles for publicity, but the total of length of these lines cannot exceed the following measures:",
+   "q": "Except an authorization issued by the minister having transports in his duties, it is prohibited to put in circulation the line of more than three vehicles, but these are not applicable to the lines of farm vehicles moving within a radius of 25 km from the farm, line of vehicles for publicity, but the total of length of these lines cannot exceed the following measures:",
    "options": [
     {
      "text": "25m"
@@ -3327,7 +3327,7 @@
    "q": "A plate mentioning the maximum speed that the vehicle cannot take is authorized to the vehicles with the following authorized weight:",
    "options": [
     {
-     "text": "Weight exceeds 1tonnes"
+     "text": "Weight exceeds 1 tonne"
     },
     {
      "text": "Weight exceeds 2 tonnes"
@@ -3349,13 +3349,13 @@
    "q": "In the absence of more restrictive regulations, maximum speed of motorcycles is:",
    "options": [
     {
-     "text": "25km/h"
+     "text": "25 km/h"
     },
     {
-     "text": "70km/h"
+     "text": "70 km/h"
     },
     {
-     "text": "40km/h"
+     "text": "40 km/h"
     },
     {
      "text": "no correct answer"
@@ -3371,13 +3371,13 @@
    "q": "Out of agglomeration, the maximum speed of the moped is",
    "options": [
     {
-     "text": "50km/h"
+     "text": "50 km/h"
     },
     {
-     "text": "40km/h"
+     "text": "40 km/h"
     },
     {
-     "text": "30km/h"
+     "text": "30 km/h"
     },
     {
      "text": "none"
@@ -3571,10 +3571,10 @@
    "q": "Motor vehicles and mopeds wheels as well as those of their trailers must be provided with tire bandages the marks of which cannot have a depth lower than one millimeter on their entire rolling surface. However this provision does not apply on:",
    "options": [
     {
-     "text": "the vehicles the speed of which, if unloaded, cannot exceed 25km per hour"
+     "text": "the vehicles the speed of which, if unloaded, cannot exceed 25 km per hour"
     },
     {
-     "text": "the vehicles for RNP when they are in traffic within a maximum radius of 25km"
+     "text": "the vehicles for RNP when they are in traffic within a maximum radius of 25 km"
     },
     {
      "text": "A and B are both correct"
@@ -3596,7 +3596,7 @@
      "text": "Military vehicles"
     },
     {
-     "text": "Agricultural vehicles when they are in traffic within a maximum radius of 25km"
+     "text": "Agricultural vehicles when they are in traffic within a maximum radius of 25 km"
     },
     {
      "text": "the vehicles of national police"
@@ -3744,7 +3744,7 @@
   },
   {
    "id": 198,
-   "q": "A fastening can only be used in cases of circumstances outside one’s control and exclusively for pulling a vehicle all the way to the place of repair at a speed which in any case cannot exceed 20km per hour. These fastenings must be shown in the following manner:",
+   "q": "A fastening can only be used in cases of circumstances outside one’s control and exclusively for pulling a vehicle all the way to the place of repair at a speed which in any case cannot exceed 20 km per hour. These fastenings must be shown in the following manner:",
    "options": [
     {
      "text": "a red piece of cloth measuring a minimum 0.50m by side"
@@ -4473,7 +4473,7 @@
    "q": "What does this sign mean?",
    "options": [
     {
-     "text": "Minimum speed 30km/h"
+     "text": "Minimum speed 30 km/h"
     },
     {
      "text": "End of compulsory maximum speed"
@@ -4482,7 +4482,7 @@
      "text": "End of minimum speed"
     },
     {
-     "text": "Maximum speed 30km/h"
+     "text": "Maximum speed 30 km/h"
     }
    ],
    "answer": 2,
@@ -5182,7 +5182,7 @@
      "text": "Service area 30 miles ahead"
     },
     {
-     "text": "Maximum speed 30km/h"
+     "text": "Maximum speed 30 km/h"
     },
     {
      "text": "Minimum speed 30 km/h"
@@ -6079,7 +6079,7 @@
      "text": "At red light"
     },
     {
-     "text": "When driving at speed of 20km/h"
+     "text": "When driving at speed of 20 km/h"
     },
     {
      "text": "A and B are correct"
@@ -7739,7 +7739,7 @@
    "q": "This signal constitutes by:",
    "options": [
     {
-     "text": "form of triangle,blue surface"
+     "text": "form of triangle, blue surface"
     },
     {
      "text": "triangle form, black surface"
@@ -7973,13 +7973,13 @@
    "q": "The signal c15 means forbidden of hooting and warning sound has the following characteristics:",
    "options": [
     {
-     "text": "Its form of circle,blue surface and black symbol"
+     "text": "Its form of circle, blue surface and black symbol"
     },
     {
-     "text": "form of circle,blue surface and white symbol"
+     "text": "form of circle, blue surface and white symbol"
     },
     {
-     "text": "form of circle,white surface and black symbol"
+     "text": "form of circle, white surface and black symbol"
     },
     {
      "text": "none of the answers is correct"
@@ -7995,16 +7995,16 @@
    "q": "Danger and priority signals are constituted by:",
    "options": [
     {
-     "text": "form of triangle in red color,white surface and black symbol"
+     "text": "form of triangle in red color, white surface and black symbol"
     },
     {
-     "text": "form of triangle in red color,blue surface and black symbol"
+     "text": "form of triangle in red color, blue surface and black symbol"
     },
     {
      "text": "form of circle in red color, blue surface and black symbol"
     },
     {
-     "text": "form of circle in red color,white surface and black symbol"
+     "text": "form of circle in red color, white surface and black symbol"
     }
    ],
    "answer": 0,

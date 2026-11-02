@@ -34,15 +34,15 @@ export default function App() {
       <aside className="sidebar">
         <div className="brand">
           <img src="./icon.svg" alt="" />
-          <div>
+          <div className="nav-label">
             DriveReady
             <small>Theory test in 14 days</small>
           </div>
         </div>
         {NAV.map((n) => (
-          <NavLink key={n.to} to={n.to} end={n.end} className="nav-link">
+          <NavLink key={n.to} to={n.to} end={n.end} className="nav-link" title={n.label}>
             <n.icon />
-            {n.label}
+            <span className="nav-label">{n.label}</span>
           </NavLink>
         ))}
         <SidebarCard />
@@ -81,7 +81,7 @@ function SidebarCard() {
       <Ring value={s.readiness / 100} size={54} stroke={6} track="rgba(255,255,255,.12)">
         <span style={{ fontSize: 12, fontWeight: 800, color: '#fff' }}>{s.readiness}%</span>
       </Ring>
-      <div>
+      <div className="nav-label">
         <b>Day {currentDay(state)}</b>
         of {PLAN_DAYS} · {s.mastered} mastered
       </div>

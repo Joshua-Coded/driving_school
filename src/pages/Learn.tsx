@@ -1,5 +1,5 @@
 import { useMemo, useState, type CSSProperties } from 'react'
-import { Icon } from '../components/Icons'
+import { Icon, TopicIcon } from '../components/Icons'
 import { PageHead } from '../components/Visuals'
 import { Link } from 'react-router-dom'
 import { LETTERS, mediaUrl, questions, TOPIC_META, topics } from '../lib/data'
@@ -61,9 +61,13 @@ export default function Learn() {
               <Link to={`/study?topic=${t.id}`} className="cover-img">
                 <img src={mediaUrl(meta.cover)} alt="" loading="lazy" />
                 <span className="pill" style={{ background: meta.color, color: '#fff' }}>
-                  {meta.icon} {qs.length} questions
+                  <TopicIcon id={t.id} /> {qs.length} questions
                 </span>
-                {m === qs.length && <span className="pill ok right">✓ Mastered</span>}
+                {m === qs.length && (
+                  <span className="pill ok right">
+                    <Icon.check /> Mastered
+                  </span>
+                )}
               </Link>
               <div className="tile-body">
               <h3>{t.name}</h3>
@@ -92,14 +96,18 @@ export default function Learn() {
 
       <div className="grid two">
         <Link to="/practice?set=bookmarks" className="action-tile">
-          <span className="chip" style={{ '--c': '#ffb300' } as CSSProperties}>⭐</span>
+          <span className="chip" style={{ '--c': '#e0a100' } as CSSProperties}>
+            <Icon.star />
+          </span>
           <div className="grow">
             <h3>Bookmarked ({state.bookmarks.length})</h3>
             <p className="muted" style={{ fontSize: 14 }}>Questions you starred to revisit.</p>
           </div>
         </Link>
         <Link to="/study?set=disputed" className="action-tile">
-          <span className="chip" style={{ '--c': '#b25e00' } as CSSProperties}>🧐</span>
+          <span className="chip" style={{ '--c': '#b25e00' } as CSSProperties}>
+            <Icon.help />
+          </span>
           <div className="grow">
             <h3>Answers to confirm ({disputed})</h3>
             <p className="muted" style={{ fontSize: 14 }}>The source document marks these differently across languages. Check them with your instructor.</p>

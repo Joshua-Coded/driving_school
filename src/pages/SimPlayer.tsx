@@ -200,12 +200,15 @@ export default function SimPlayer() {
               ) : (
                 ch && (
                   <div className="card flat stack" style={{ background: ch.correct ? 'var(--ok-soft)' : 'var(--bad-soft)', borderColor: 'transparent' }}>
-                    <b style={{ color: ch.correct ? 'var(--ok)' : 'var(--bad)' }}>{ch.correct ? 'Safe choice ✓' : ch.crash ? 'Collision ✗' : 'Dangerous ✗'}</b>
+                    <b style={{ color: ch.correct ? 'var(--ok)' : 'var(--bad)' }}>{ch.correct ? 'Safe choice' : ch.crash ? 'Collision' : 'Dangerous ✗'}</b>
                     <p>{ch.feedback}</p>
                   </div>
                 )
               )}
-              <div className="rule">📘 {sc.rule}</div>
+              <div className="rule row" style={{ alignItems: 'flex-start' }}>
+                <Icon.book />
+                <span>{sc.rule}</span>
+              </div>
               <div className="row wrap">
                 {ch && (
                   <button className="btn secondary" onClick={replayOutcome}>

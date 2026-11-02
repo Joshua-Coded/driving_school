@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react'
-import { LETTERS, mediaUrl, TOPIC_META, topicColor, topicName, type Question } from '../lib/data'
+import { LETTERS, mediaUrl, topicColor, topicName, type Question } from '../lib/data'
 import { useStore } from '../lib/store'
-import { Icon } from './Icons'
+import { Icon, TopicIcon } from './Icons'
 
 /**
  * A question card with its options.
@@ -43,7 +43,7 @@ export function QuestionView({
             )}
             {!hideTopic && (
               <span className="pill" style={{ background: `color-mix(in srgb, ${color} 14%, var(--surface))`, color }}>
-                {TOPIC_META[q.topic]?.icon} {topicName(q.topic)}
+                <TopicIcon id={q.topic} /> {topicName(q.topic)}
               </span>
             )}
           </div>
@@ -57,6 +57,8 @@ export function QuestionView({
           </button>
         </div>
 
+        <div className={`q-body ${q.images.length > 0 ? 'has-media' : ''}`}>
+        <div className="q-left stack lg">
         <p className="q-text">{q.q}</p>
 
         {q.images.length > 0 && (
@@ -66,7 +68,9 @@ export function QuestionView({
             ))}
           </div>
         )}
+        </div>
 
+        <div className="q-right stack lg">
         <div className={`options ${pics ? 'pics' : ''}`} role="radiogroup">
           {q.options.map((o, i) => {
             let cls = 'opt'
@@ -92,6 +96,8 @@ export function QuestionView({
         </div>
 
         {reveal && <Explanation q={q} picked={picked} />}
+        </div>
+        </div>
         <span className="faint">Question #{q.id} from the official question bank</span>
       </div>
     </div>

@@ -78,7 +78,9 @@ export default function Practice() {
     return (
       <div className="page narrow">
         <div className="card empty stack" style={{ alignItems: 'center' }}>
-          <span style={{ fontSize: 40 }}>🎉</span>
+          <span className="chip" style={{ width: 64, height: 64 }}>
+            <Icon.check />
+          </span>
           <h2>Nothing here right now</h2>
           <p>{set.title}: no questions in this set yet.</p>
           <Link to="/" className="btn">
@@ -100,7 +102,9 @@ export default function Practice() {
       <div className="page narrow">
         <div className={`result-hero stack lg ${pct >= 60 ? 'pass' : 'fail'}`} style={{ alignItems: 'center' }}>
           {pct >= 80 && <Confetti />}
-          <span style={{ fontSize: 48 }}>{pct >= 80 ? '🏆' : pct >= 60 ? '💪' : '📘'}</span>
+          <span className="chip" style={{ width: 64, height: 64, borderRadius: 20, background: 'rgba(255,255,255,.1)', color: 'var(--yellow)' }}>
+            {pct >= 80 ? <Icon.trophy /> : pct >= 60 ? <Icon.award /> : <Icon.book />}
+          </span>
           <div className="result-big">{pct}%</div>
           <p className="muted">
             {firstRight} of {answeredUnique} right on the first try. Every question was answered correctly by the end.
@@ -132,7 +136,7 @@ export default function Practice() {
           </button>
           <span className="faint">{set.title}</span>
           <span className="pill ok">
-            {firstRight}/{answeredUnique} ✓
+            <Icon.check /> {firstRight}/{answeredUnique}
           </span>
         </div>
         <div className="bar thin ok">

@@ -18,7 +18,7 @@ export default function Home() {
   const simsDone = scenarios.filter((x) => state.sims[x.id]?.correct).length
   const verdict =
     s.streakPass && s.readiness >= 80
-      ? { text: '✓ Exam ready', cls: 'ok' }
+      ? { text: 'Exam ready', cls: 'ok' }
       : s.readiness >= 50
         ? { text: 'Getting there', cls: 'yellow' }
         : { text: started ? 'Building up' : 'Ready when you are', cls: 'glass' }
@@ -30,7 +30,11 @@ export default function Home() {
         <div className="hero-body">
           <div className="row" style={{ gap: 8 }}>
             <span className={`pill ${verdict.cls}`}>{verdict.text}</span>
-            {streak > 0 && <span className="pill glass">🔥 {streak}-day streak</span>}
+            {streak > 0 && (
+              <span className="pill glass">
+                <Icon.fire /> {streak}-day streak
+              </span>
+            )}
           </div>
           <div>
             <p className="muted" style={{ fontWeight: 600 }}>
@@ -85,12 +89,12 @@ export default function Home() {
       </section>
 
       <div className="grid four stats">
-        <StatCard icon="🎯" color="#2f6bff" value={`${s.readiness}%`} label="readiness">
+        <StatCard icon={<Icon.target />} color="#2f6bff" value={`${s.readiness}%`} label="readiness">
           <Ring value={s.readiness / 100} size={44} stroke={5} color="var(--brand)" track="var(--surface-2)" />
         </StatCard>
-        <StatCard icon="🏅" color="#12a560" value={`${s.mastered}`} label={`of ${s.total} mastered`} />
-        <StatCard icon="🔁" color="#ff8a00" value={`${s.due}`} label="due for review" />
-        <StatCard icon="📝" color="#7c5cff" value={`${s.examsTaken}`} label={s.examsTaken ? `exams · avg ${Math.round(s.examAvg * 100)}%` : 'mock exams'} />
+        <StatCard icon={<Icon.award />} color="#12a560" value={`${s.mastered}`} label={`of ${s.total} mastered`} />
+        <StatCard icon={<Icon.refresh />} color="#ff8a00" value={`${s.due}`} label="due for review" />
+        <StatCard icon={<Icon.file />} color="#7c5cff" value={`${s.examsTaken}`} label={s.examsTaken ? `exams · avg ${Math.round(s.examAvg * 100)}%` : 'mock exams'} />
       </div>
 
       <div className="grid two" style={{ alignItems: 'start' }}>
@@ -108,17 +112,17 @@ export default function Home() {
         </section>
 
         <div className="stack">
-          <ActionTile to="/sim" icon="🚗" color="#ffb300" title="Driving simulations" text={`${simsDone} of ${scenarios.length} passed · decide fast, see what happens`} />
-          <ActionTile to="/practice?set=weak" icon="🎯" color="#e5383b" title="Fix weak spots" text={`${s.weak} question${s.weak === 1 ? '' : 's'} you last got wrong`} />
-          <ActionTile to="/practice?set=signs" icon="🛑" color="#2f6bff" title="Picture drill" text="Every question with a sign, marking or road photo" />
-          <ActionTile to="/learn" icon="📚" color="#12a560" title="Browse by topic" text="10 topics, from road signs to vehicle rules" />
+          <ActionTile to="/sim" icon={<Icon.car />} color="#e0a100" title="Driving simulations" text={`${simsDone} of ${scenarios.length} passed · decide fast, see what happens`} />
+          <ActionTile to="/practice?set=weak" icon={<Icon.target />} color="#e5383b" title="Fix weak spots" text={`${s.weak} question${s.weak === 1 ? '' : 's'} you last got wrong`} />
+          <ActionTile to="/practice?set=signs" icon={<Icon.image />} color="#2f6bff" title="Picture drill" text="Every question with a sign, marking or road photo" />
+          <ActionTile to="/learn" icon={<Icon.layers />} color="#12a560" title="Browse by topic" text="10 topics, from road signs to vehicle rules" />
         </div>
       </div>
     </div>
   )
 }
 
-function StatCard({ icon, color, value, label, children }: { icon: string; color: string; value: string; label: string; children?: React.ReactNode }) {
+function StatCard({ icon, color, value, label, children }: { icon: React.ReactNode; color: string; value: string; label: string; children?: React.ReactNode }) {
   return (
     <div className="card tight stat-card">
       <span className="chip" style={{ '--c': color } as CSSProperties}>
@@ -133,7 +137,7 @@ function StatCard({ icon, color, value, label, children }: { icon: string; color
   )
 }
 
-function ActionTile({ to, icon, color, title, text }: { to: string; icon: string; color: string; title: string; text: string }) {
+function ActionTile({ to, icon, color, title, text }: { to: string; icon: React.ReactNode; color: string; title: string; text: string }) {
   return (
     <Link to={to} className="action-tile">
       <span className="chip" style={{ '--c': color } as CSSProperties}>

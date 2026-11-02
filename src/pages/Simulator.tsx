@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Icon } from '../components/Icons'
+import { Icon, TopicIcon } from '../components/Icons'
 import { Ring } from '../components/Ring'
 import { PageHead, SceneThumb } from '../components/Visuals'
-import { TOPIC_META, topicName } from '../lib/data'
+import { topicName } from '../lib/data'
 import { useStore } from '../lib/store'
 import { scenarios } from '../sim/scenarios'
 
@@ -35,7 +35,11 @@ export default function Simulator() {
                 <span className="pill" style={{ background: 'var(--navy)', color: '#fff' }}>
                   #{i + 1}
                 </span>
-                {r?.correct ? <span className="pill ok right">✓ Passed</span> : r ? <span className="pill bad right">Try again</span> : <span className="pill yellow right">New</span>}
+                {r?.correct ? (
+                  <span className="pill ok right">
+                    <Icon.check /> Passed
+                  </span>
+                ) : r ? <span className="pill bad right">Try again</span> : <span className="pill yellow right">New</span>}
               </div>
               <div className="tile-body">
                 <h3>{s.title}</h3>
@@ -43,8 +47,8 @@ export default function Simulator() {
                   {s.brief}
                 </p>
                 <div className="row between faint" style={{ marginTop: 'auto' }}>
-                  <span>
-                    {TOPIC_META[s.relatedTopic]?.icon} {topicName(s.relatedTopic)}
+                  <span className="row" style={{ gap: 6 }}>
+                    <TopicIcon id={s.relatedTopic} /> {topicName(s.relatedTopic)}
                   </span>
                   <span className="row" style={{ gap: 4, color: 'var(--brand)', fontWeight: 700 }}>
                     Play <Icon.play />
